@@ -6,7 +6,7 @@ package com.mycompany.javachatapp;
 
 /**
  *
- * @author ASUS
+ * @author ammar
  */
 public class Javachatapp {
 
