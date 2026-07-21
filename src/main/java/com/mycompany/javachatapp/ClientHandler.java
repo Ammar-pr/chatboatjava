@@ -39,7 +39,17 @@ public class ClientHandler implements Runnable {
                 }
             }
         } catch (IOException ex) {
-            System.getLogger(ClientHandler.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+            
+            System.out.println("An error occurred"+ex.getMessage());
+        }finally{
+            try {
+                in.close();
+                out.close();
+                clinetSocket.close();
+            }catch (IOException exl) {
+            System.out.println("An error occurred"+exl.getMessage());
+            }
+            
         }
 
     }
