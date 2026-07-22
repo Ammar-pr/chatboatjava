@@ -30,10 +30,12 @@ public class ChatClient {
                 line = inputConsole.readLine();
                 out.println(line);
                 System.out.println(in.readLine());
-                socket.close();
-                inputConsole.close();
 
             }
+            socket.close();
+            inputConsole.close();
+            out.close();
+
         } catch (UnknownHostException u) {
             {
                 System.out.println("host error exception" + u.getMessage());
