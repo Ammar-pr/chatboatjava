@@ -17,6 +17,7 @@ public class ChatClient {
     private BufferedReader inputConsole = null;
     private PrintWriter out = null;
     private BufferedReader in = null;
+    protected String key;
 
     public ChatClient(String address, int port) throws IOException {
         try {
